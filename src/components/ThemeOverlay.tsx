@@ -309,7 +309,7 @@ function FluidOverlay() {
           <text x="130" y="63" textAnchor="middle" fontSize="8.5" fontFamily="serif" fontWeight="bold" fill="rgba(6,182,212,0.5)">with Millimeter-Sized Bubbles at</text>
           <text x="130" y="76" textAnchor="middle" fontSize="8.5" fontFamily="serif" fontWeight="bold" fill="rgba(6,182,212,0.5)">Translational Resonance</text>
           {/* Authors */}
-          <text x="130" y="94" textAnchor="middle" fontSize="8" fontFamily="serif" fill="rgba(6,182,212,0.4)">Yan Jun Lin, Zhipeng Liu, Sunghwan Jung</text>
+          <text x="130" y="94" textAnchor="middle" fontSize="8" fontFamily="serif" fill="rgba(6,182,212,0.4)">Yan Jun Lin, Zhengyang Liu, Sunghwan Jung</text>
           <line x1="70" y1="100" x2="190" y2="100" stroke="rgba(6,182,212,0.06)" strokeWidth="0.5" />
           {/* Abstract */}
           <text x="20" y="118" fontSize="7" fontFamily="serif" fontWeight="bold" fill="rgba(6,182,212,0.2)">Abstract</text>
