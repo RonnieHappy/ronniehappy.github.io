@@ -338,7 +338,7 @@ export default function Projects() {
       <Helmet>
         <title>Projects — Yany Lin</title>
         <meta name="description" content="Research projects by Yany Lin: acoustic bubble dynamics, hip arthroplasty outcomes, organ transplant ethics, tibial stress analysis, fungal hygroscopy, and multimodal neuroimaging." />
-        <link rel="canonical" href="https://yanyliny.github.io/projects" />
+        <link rel="canonical" href="https://yanylin.me/projects" />
       </Helmet>
 
       {/* Elegant Header */}

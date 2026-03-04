@@ -32,7 +32,7 @@ export default function Home() {
       <Helmet>
         <title>Yany Lin — Researcher | Cornell University</title>
         <meta name="description" content="Yany Lin's research spans experimental fluid mechanics, medical ethics, and orthopaedic outcomes — from acoustic bubble dynamics to transplant allocation frameworks." />
-        <link rel="canonical" href="https://yanyliny.github.io/" />
+        <link rel="canonical" href="https://yanylin.me/" />
       </Helmet>
 
       {/* Hero Section */}
