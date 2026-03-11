@@ -21,7 +21,7 @@ const routes = [
         <li>Harm-Threshold Utilitarianism: Exploring an Ethical Framework for Organ Transplant Allocation — Published in Frontiers in Health Services (2025)</li>
         <li>Impact Orientation and Knee Bracing Effects on Tibial Stress: A Finite Element Study — In Submission (2025)</li>
         <li>Fungal Hyphae Reorganize Condensation Fields as Distributed Hygroscopic Sinks — In Submission at Nature Communications (2025)</li>
-        <li>Integrating Multimodal Neuroimaging for Neurological Disorders — In Revision at SN Comprehensive Clinical Medicine (2025)</li>
+        <li>Integrating Multimodal Neuroimaging for Neurological Disorders — Accepted at SN Comprehensive Clinical Medicine (2025)</li>
       </ul>
       <p><a href="/">Back to Home</a></p>
     `,
@@ -55,6 +55,14 @@ for (const route of routes) {
     /<meta name="description" content=".*?" \/>/,
     `<meta name="description" content="${route.description}" />`
   )
+
+  // Ensure nosnippet is present
+  if (!html.includes('name="robots"')) {
+    html = html.replace(
+      /<meta name="description"/,
+      `<meta name="robots" content="nosnippet" />\n    <meta name="description"`
+    )
+  }
 
   // Replace canonical
   html = html.replace(

@@ -338,6 +338,7 @@ export default function Gallery() {
       <Helmet>
         <title>Gallery — Yany Lin</title>
         <meta name="description" content="Photos from Yany Lin's research, conferences, sports, and life — bubble experiments, fluid dynamics talks, football, wrestling, and more." />
+        <meta name="robots" content="nosnippet" />
         <link rel="canonical" href="https://yanylin.me/gallery" />
       </Helmet>
 

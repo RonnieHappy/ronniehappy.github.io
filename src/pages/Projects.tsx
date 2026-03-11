@@ -294,7 +294,7 @@ export default function Projects() {
       title: 'Integrating Multimodal Neuroimaging for Neurological Disorders: A Systematic Framework for Clinical Translation',
       image: '/papers/neuro-summary.png',
       imageMaxWidth: '75%',
-      status: 'In Revision',
+      status: 'Accepted',
       venue: 'SN Comprehensive Clinical Medicine',
       year: '2025',
       laySummary:
@@ -338,6 +338,7 @@ export default function Projects() {
       <Helmet>
         <title>Projects — Yany Lin</title>
         <meta name="description" content="Research projects by Yany Lin: acoustic bubble dynamics, hip arthroplasty outcomes, organ transplant ethics, tibial stress analysis, fungal hygroscopy, and multimodal neuroimaging." />
+        <meta name="robots" content="nosnippet" />
         <link rel="canonical" href="https://yanylin.me/projects" />
       </Helmet>
 
