@@ -30,8 +30,8 @@ const groups: PhotoGroup[] = [
     photos: [
       { src: '/gallery/fungi-1.jpg', alt: 'Fungal hygroscopy research', tag: 'fungi' },
       { src: '/gallery/fungi-2.jpg', alt: 'Fungal hygroscopy research', tag: 'fungi' },
-      { src: '/gallery/fungi-3.png', alt: 'Fungal condensation micrograph', tag: 'fungi' },
-      { src: '/gallery/fungi-4.png', alt: 'Fungal condensation micrograph', tag: 'fungi' },
+      { src: '/gallery/fungi-3.jpg', alt: 'Fungal condensation micrograph', tag: 'fungi' },
+      { src: '/gallery/fungi-4.jpg', alt: 'Fungal condensation micrograph', tag: 'fungi' },
     ],
   },
   {
@@ -288,7 +288,7 @@ function GalleryRow({ group, index }: { group: PhotoGroup; index: number }) {
         {/* Group Caption */}
         <div className="flex items-center gap-4 mb-8">
           <div className="h-px flex-1 bg-white/10"></div>
-          <h2 className="text-sm font-normal text-white/50 uppercase tracking-widest whitespace-nowrap">
+          <h2 className="text-sm font-normal text-white/50 uppercase tracking-widest text-center">
             {group.caption}
           </h2>
           <div className="h-px flex-1 bg-white/10"></div>
@@ -302,6 +302,7 @@ function GalleryRow({ group, index }: { group: PhotoGroup; index: number }) {
                 <img
                   src={group.photos[0].src}
                   alt={group.photos[0].alt}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                   style={group.photos[0].objectPosition ? { objectPosition: group.photos[0].objectPosition } : undefined}
                 />
@@ -319,6 +320,7 @@ function GalleryRow({ group, index }: { group: PhotoGroup; index: number }) {
                   <img
                     src={photo.src}
                     alt={photo.alt}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
                   />
@@ -333,6 +335,10 @@ function GalleryRow({ group, index }: { group: PhotoGroup; index: number }) {
 }
 
 export default function Gallery() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="relative min-h-screen -mx-4 sm:-mx-6 lg:-mx-8 -my-20 px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
       <Helmet>
